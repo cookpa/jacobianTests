@@ -1,3 +1,6 @@
+PAC 2025-05-13: Added a couple of minor script fixes to make them run with
+current ANTs 2.6.0. Otherwise unchanged from original
+
 # jacobianTests
 very basic test of jacobian
 should get a value around 2.14

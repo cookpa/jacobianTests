@@ -22,7 +22,7 @@ for x in 0 1 2 ; do
                            -t syn[ 0.10, 3, 0.0 ] \
                            -c [100x100x100,1.e-8,20]  \
                           -s 2x1x0vox  \
-                          -f 4x2x1 -l 1 -u 1 -z 1 \
+                          -f 4x2x1 -u 1 -z 1 \
                          -o [${nm},${nm}_diff.nii.gz,${nm}_inv.nii.gz]
 #  ANTSJacobian $dim CIRC0Warp.nii.gz /tmp/circA 0 0 0
 #  ./rcalc.R $f $m

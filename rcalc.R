@@ -18,8 +18,8 @@ print( paste("%err", 100.0 * ( 1.0-myjcalc/myscalc ) ) )
 
 
 print("Resample the images and compute volumes ( using registration in ANTsR):")
-circ2r = resampleImage( circ2, 1.5 )
-circ1r = resampleImage( circ, 0.5 )
+circ2r = resampleImage( circ2, rep(1.5, circ2@dimension) )
+circ1r = resampleImage( circ, rep(0.5, circ@dimension) )
 myreg = antsRegistration( circ1r, circ2r, 'SyNOnly',
   synMetric = 'meansquares',
   regIterations = c( 100,100, 10 )    )
